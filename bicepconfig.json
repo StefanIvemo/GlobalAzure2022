@@ -1,0 +1,26 @@
+{
+    "analyzers": {
+        "core": {
+            "enabled": true,
+            "rules": {
+                "no-hardcoded-location": {
+                    "level": "off"
+                }
+            }
+        }
+    },
+    "moduleAliases": {
+        "br": {
+            "GlobalAzure": {
+                "registry": "azopsmodules.azurecr.io"
+            }
+        }
+    },
+    "cloud": {
+        "currentProfile": "AzureCloud",
+        "credentialPrecedence": [
+            "AzurePowerShell",
+            "AzureCLI"
+        ]
+    }
+}
