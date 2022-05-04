@@ -4,7 +4,7 @@ param vnetName string
 param addressPrefixes array = [
   '10.0.0.0/16'
 ]
-param subnets array
+param subnets array = []
 param dnsServers array = []
 param enableDdosProtection bool = false
 param ddosProtectionPlanId string = ''
@@ -25,7 +25,7 @@ resource vnet 'Microsoft.Network/virtualNetworks@2020-08-01' = {
     enableDdosProtection: enableDdosProtection
     ddosProtectionPlan: enableDdosProtection ? {
       id: ddosProtectionPlanId
-    } : json('null')
+    } : null
     subnets: subnets
   }
 }
