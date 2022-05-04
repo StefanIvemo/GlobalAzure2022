@@ -1,5 +1,4 @@
 // Parameters
-@maxLength(4)
 param namePrefix string
 param location string
 

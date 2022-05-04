@@ -12,7 +12,7 @@
     "moduleAliases": {
         "br": {
             "GlobalAzure": {
-                "registry": "azopsmodules.azurecr.io"
+                "registry": "globalazuresthlm.azurecr.io"
             }
         }
     },

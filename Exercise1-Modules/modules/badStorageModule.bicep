@@ -3,7 +3,7 @@ param name string
 param sku string
 param kind string
 param accessTier string
-param location string = resourceGroup().id
+param location string
 
 resource storage 'Microsoft.Storage/storageAccounts@2019-06-01' = {
   name: name

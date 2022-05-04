@@ -22,7 +22,7 @@ param sku string
   'BlockBlobStorage'
 ])
 @description('Indicates the type of storage account.')
-param kind string
+param kind string = 'StorageV2'
 
 @allowed([
   'Hot'
