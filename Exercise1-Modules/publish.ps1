@@ -1,0 +1,1 @@
+br:globalazuresthlm.azurecr.io/storage:v1
