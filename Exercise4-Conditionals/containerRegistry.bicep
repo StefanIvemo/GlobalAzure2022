@@ -19,10 +19,13 @@ var networkRuleSet = {
 resource acr 'Microsoft.ContainerRegistry/registries@2021-12-01-preview' = {
   name: 'globalazureacr'
   location: 'westeurope'
+  dependsOn: [
+    
+  ]
   sku: {
     name: sku
   }
   properties: {
-    
+    networkRuleSet: sku == 'Premium' ? networkRuleSet : null
   }
 }

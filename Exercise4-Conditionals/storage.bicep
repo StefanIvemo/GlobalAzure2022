@@ -10,7 +10,7 @@ resource storage 'Microsoft.Storage/storageAccounts@2021-08-01' = {
   name: 'globalazuresthlmst'
   location: 'westeurope'
   sku: {
-    name: 'Standard_LRS'
+    name: env == 'prod' ? 'Premium_LRS' : 'Standard_LRS'
   }
   kind: 'StorageV2'
 }
